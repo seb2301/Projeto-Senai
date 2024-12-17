@@ -1,0 +1,144 @@
+/* Estilo global */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #00ffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilos dos campos de entrada */
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #00ffff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 95%;
+    padding: 10px;
+    border: 2px solid #00ffff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f0f0f0;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #00b3b3;
+    outline: none;
+}
+
+/* Estilo para radio buttons */
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+legend {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #00ffff;
+    text-shadow: 0 0 3px #00ffff;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+label[for*="matematica"],
+label[for*="portugues"],
+label[for*="biologia"],
+label[for*="ciencias"],
+label[for*="historia"],
+label[for*="geografia"],
+label[for*="artes"],
+label[for*="superior"],
+label[for*="mestrado-cursando"],
+label[for*="mestrado-completo"],
+label[for*="doutorado-cursando"],
+label[for*="doutorado-completo"],
+label[for*="matutino"],
+label[for*="verpertino"],
+label[for*="noturno"] {
+    font-size: 1rem;
+    color: #f0f0f0;
+    cursor: pointer;
+}
+
+/* Botão de envio */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #00ffff;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #00b3b3;
+}
+
+button:active {
+    background: #008080;
+    transform: scale(0.98);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea,
+    button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">   
+    <title>Formulário de Candidatura</title>
+</head>
+<body>
+    <main>
+        <h1>Formulário de Candidatura para Professores</h1>
+        <form id="Form" name="Form">
+            <!-- Campo Nome Completo -->
+            <div>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="Nome" required>
+            </div>
+
+            <!-- Campo E-mail -->
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="E-mail" required>
+            </div>
+
+            <!-- Campo Idade -->
+            <div>
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="Idade" required>
+            </div>
+
+            <!-- Campo Matéria -->
+            <fieldset>
+                <legend>Para qual matéria você está se candidatando para lecionar?</legend>
+                <div>
+                    <input type="radio" id="matematica" name="assunto" value="Matemática" required>
+                    <label for="matematica">Matemática</label>
+                </div>
+                <div>
+                    <input type="radio" id="portugues" name="assunto" value="Português" required>
+                    <label for="portugues">Português</label>
+                </div>
+                <div>
+                    <input type="radio" id="biologia" name="assunto" value="Biologia" required>
+                    <label for="biologia">Biologia</label>
+                </div>
+                <div>
+                    <input type="radio" id="ciencias" name="assunto" value="Ciências" required>
+                    <label for="ciencias">Ciências</label>
+                </div>
+                <div>
+                    <input type="radio" id="historia" name="assunto" value="História" required>
+                    <label for="historia">História</label>
+                </div>
+                <div>
+                    <input type="radio" id="geografia" name="assunto" value="Geografia" required>
+                    <label for="geografia">Geografia</label>
+                </div>
+                <div>
+                    <input type="radio" id="artes" name="assunto" value="Artes" required>
+                    <label for="artes">Artes</label>
+                </div>
+            </fieldset>
+
+            <!-- Campo Turnos disponíveis -->
+            <fieldset>
+                <legend>Turnos disponíveis:</legend>
+                <div>
+                    <input type="radio" id="matutino" name="Turnos" value="Matutino" required>
+                    <label for="matutino">Matutino</label>
+                </div>
+                <div>
+                    <input type="radio" id="verpertino" name="Turnos" value="Verpertino" required>
+                    <label for="verpertino">Verpertino</label>
+                </div>
+                <div>
+                    <input type="radio" id="noturno" name="Turnos" value="Noturno" required>
+                    <label for="noturno">Noturno</label>
+                </div>
+            </fieldset>
+
+            <!-- Campo Escolaridade -->
+            <fieldset>
+                <legend>Nível de Escolaridade:</legend>
+                <div>
+                    <input type="radio" id="superior" name="Escolaridade" value="Ensino Superior Completo" required>
+                    <label for="superior">Ensino Superior Completo</label>
+                </div>
+                <div>
+                    <input type="radio" id="mestrado-cursando" name="Escolaridade" value="Cursando Mestrado" required>
+                    <label for="mestrado-cursando">Cursando Mestrado</label>
+                </div>
+                <div>
+                    <input type="radio" id="mestrado-completo" name="Escolaridade" value="Mestrado Completo" required>
+                    <label for="mestrado-completo">Mestrado Completo</label>
+                </div>
+                <div>
+                    <input type="radio" id="doutorado-cursando" name="Escolaridade" value="Cursando Doutorado" required>
+                    <label for="doutorado-cursando">Cursando Doutorado</label>
+                </div>
+                <div>
+                    <input type="radio" id="doutorado-completo" name="Escolaridade" value="Doutorado Completo" required>
+                    <label for="doutorado-completo">Doutorado Completo</label>
+                </div>
+            </fieldset>
+
+            <!-- Campo Descrição sobre si mesmo -->
+            <div>
+                <label for="descricao">Descrição sobre si mesmo:</label>
+                <textarea id="descricao" name="Descrição" maxlength="200" required></textarea>
+            </div>
+
+            <!-- Botão de Envio -->
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
